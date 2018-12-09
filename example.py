@@ -49,7 +49,7 @@ if __name__ == '__main__':
         code.append("s = 'Python syntax highlighting'")
         code.append("print(s)")
         writer.write(code)
-        writer.write('\n')
+        writer.writeline()
         table = mg.Table()
         table.add_column('col1')
         table.add_column('col2', mg.Alignment.CENTER)
