@@ -38,10 +38,11 @@ if __name__ == '__main__':
         checklist.append('checklist2', True)
         writer.write(checklist)
 
-        link = mg.link('https://reddit.com','link text')
+        link = mg.link('https://reddit.com', 'link text')
         writer.writeline(link)
 
-        image = mg.Image('https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png',
+        image = mg.Image(('https://github.com/adam-p/markdown-here/'
+                          'raw/master/src/common/images/icon48.png'),
                          'my alt text')
         writer.writeline(image)
 
