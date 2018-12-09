@@ -38,10 +38,10 @@ if __name__ == '__main__':
         checklist.append('checklist2', True)
         writer.write(checklist)
 
-        link = mg.link('link text', 'https://reddit.com')
+        link = mg.link('https://reddit.com','link text')
         writer.writeline(link)
 
-        image = mg.Image('https://example.com/link/to/image.png',
+        image = mg.Image('https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png',
                          'my alt text')
         writer.writeline(image)
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         code.append("s = 'Python syntax highlighting'")
         code.append("print(s)")
         writer.write(code)
-
+        writer.write('\n')
         table = mg.Table()
         table.add_column('col1')
         table.add_column('col2', mg.Alignment.CENTER)
